@@ -1,0 +1,21 @@
+﻿@model UserProfile
+
+<h1>Please enter the following</h1>
+
+<form asp-controller="Home" asp-action="HandleSubmit" method="post" role="form">
+
+    <label asp-for="FirstName">First Name: </label>
+    <input asp-for="FirstName" />
+    <br />
+    <label asp-for="LastName">Last Name: </label>
+    <input asp-for="LastName" />
+    <br />
+    <label asp-for="Email" >Email: </label>
+    <input asp-for="Email"/>
+    <br />
+    <label asp-for="Password">Password: </label>
+    <input asp-for="Password" />
+    <br />
+    <input type="submit"/>
+
+</form>
